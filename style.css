@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Code+Pro&display=swap');
+
+
+body{
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;   
+}
+
+header{
+    height: 120vh;
+    background: url("https://www.trbimg.com/img-586ea3c4/turbine/mc-the-nerds-musikfest-cafe-bethlehem-0105-20170105");
+    background-position: center;
+    color: rgb(29, 101, 184);
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+header nav a{    
+    color: rgb(20, 2, 2);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header nav a:hover{    
+    color: blue;
+    border-bottom: 1px solid chocolate;
+}
+
+header .principal{
+    margin-top: -30px;
+    padding: 10px;
+}
+ 
+.première{
+    background-color: #222f3e;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.première .gauche{
+    width: 60%;
+    margin-right: 40px;
+}
+
+footer{
+    background-color: #222f3e;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}    
+
+footer .social-media{
+    display: flex;
+    margin-left: 10px;
+}
+
+footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 810px){
+    .première .gauche{
+        width: 100%; 
+    }
+    .première .droite{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
